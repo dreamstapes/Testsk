@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="skwoll.testcases.LoginTest">
+        <methods>
+          <include name="menuAddSubcategory"/>
+          <include name="viewProfile"/>
+          <include name="skwollLO"/>
+          <include name="event"/>
+          <include name="skwollLN"/>
+          <include name="order"/>
+          <include name="menuSubcategoryList"/>
+          <include name="menuAddProduct"/>
+          <include name="menuCategoryList"/>
+          <include name="menuProductList"/>
+          <include name="skwollLB"/>
+          <include name="editProfile"/>
+          <include name="setting"/>
+          <include name="skwollCB"/>
+          <include name="editStripe"/>
+          <include name="menuAddCategory"/>
+          <include name="menuWelComeDrink"/>
+        </methods>
+      </class> <!-- skwoll.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
