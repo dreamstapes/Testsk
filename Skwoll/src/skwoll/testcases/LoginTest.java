@@ -32,6 +32,14 @@ public class LoginTest extends BaseClass{
 		driver.findElement(By.xpath("//a[text()='Yearly']")).click();
 		System.out.println(driver.findElement(By.xpath("//a[text()='Yearly']")).getText());
 	}
+	@Test
+	public void salesReport() throws Throwable {
+		driver.findElement(By.xpath("//a[text()='Sales Report']")).click();
+		driver.findElement(By.id("daterange")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[text()='Apply']")).click();
+		driver.findElement(By.xpath("//button[text()='Export']")).click();
+	}
 /**	@AfterMethod
 	public void tearDown(ITestListener result) {
 		if(ITestListener.FAILURE==result.getStatus()) {
@@ -46,6 +54,10 @@ public class LoginTest extends BaseClass{
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='Order ']")).click();
 		System.out.println(driver.findElement(By.xpath("//a[text()='Order ']")).getText());
+		driver.findElement(By.xpath("//a[text()='Next']")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//a[text()='Previous']")).click();
+		Thread.sleep(4000);
 	}
 	@Test
 	public void menuAddCategory() throws Throwable {
@@ -60,14 +72,18 @@ public class LoginTest extends BaseClass{
 	//	driver.findElement(By.xpath("//option[text()='Drink']")).click();
 		System.out.println(driver.findElement(By.xpath("//Label[text()='Category Name (En)']")).getText());
 		driver.findElement(By.id("subcategoryName")).sendKeys(flb.getPropertyKeyValue("CategoryName"));
-		
 		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[text()='Save']")).click();
+		//if else condition put here
+	//	System.out.println(driver.findElement(By.xpath("//span[text()='New record added successfully.']")).getText());
+		System.out.println(driver.findElement(By.xpath("//span[text()='Record already exists.']")).getText());
 	}
 	@Test
-	public void menuCategoryList () throws Throwable {
+	public void menuCategoryList() throws Throwable {
 		driver.findElement(By.xpath("//p[text()='Menu']")).click();
 		System.out.println(driver.findElement(By.xpath("//p[text()='Menu']")).getText());
 		driver.findElement(By.xpath("//a[text()=' Category List ']")).click();
+		
 	}
 		
 	@Test
