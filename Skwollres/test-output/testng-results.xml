@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="21" total="22" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-06-18T09:04:35Z" name="Default suite" finished-at="2019-06-18T09:05:07Z" duration-ms="31719">
+    <groups>
+    </groups>
+    <test started-at="2019-06-18T09:04:35Z" name="Default test" finished-at="2019-06-18T09:05:07Z" duration-ms="31719">
+      <class name="skwolladmin.testcases.TestcasesAdmin">
+        <test-method is-config="true" signature="skwollLB()[pri:0, instance:skwolladmin.testcases.TestcasesAdmin@7c1e2a9e]" started-at="2019-06-18T09:04:35Z" name="skwollLB" finished-at="2019-06-18T09:04:42Z" duration-ms="6383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skwollLB -->
+        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwolladmin.testcases.TestcasesAdmin@7c1e2a9e]" started-at="2019-06-18T09:04:42Z" name="skwollLN" finished-at="2019-06-18T09:05:01Z" duration-ms="19002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skwollLN -->
+        <test-method signature="blog()[pri:0, instance:skwolladmin.testcases.TestcasesAdmin@7c1e2a9e]" started-at="2019-06-18T09:05:01Z" name="blog" finished-at="2019-06-18T09:05:03Z" duration-ms="2274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blog -->
+        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwolladmin.testcases.TestcasesAdmin@7c1e2a9e]" started-at="2019-06-18T09:05:03Z" name="skwollLO" finished-at="2019-06-18T09:05:07Z" duration-ms="3726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skwollLO -->
+        <test-method is-config="true" signature="skwollCB()[pri:0, instance:skwolladmin.testcases.TestcasesAdmin@7c1e2a9e]" started-at="2019-06-18T09:05:07Z" name="skwollCB" finished-at="2019-06-18T09:05:07Z" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skwollCB -->
+      </class> <!-- skwolladmin.testcases.TestcasesAdmin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
