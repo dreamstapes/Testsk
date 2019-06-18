@@ -311,7 +311,7 @@ public class TestcasesAdmin extends BaseClass{
 		sel.selectByIndex(1);
 	}
 	@Test
-	public void blog() throws Throwable {
+	public void blogAddCategory() throws Throwable {
 		driver.findElement(By.xpath("//p[text()='Blog']")).click();
 		driver.findElement(By.xpath("//a[text()='Add Category ']")).click();
 		driver.findElement(By.id("categoryName")).sendKeys(flb.getPropertyKeyValue("CategoryName"));
@@ -319,5 +319,20 @@ public class TestcasesAdmin extends BaseClass{
 		driver.findElement(By.id("metaKeywords")).sendKeys(flb.getPropertyKeyValue("CategorymetaKeywords"));
 		driver.findElement(By.id("metaDescription")).sendKeys(flb.getPropertyKeyValue("CategorymetaDescription"));
 		driver.findElement(By.xpath("//button[text()='Save Category']")).click();
+	}
+	@Test
+	public void blogCategoryList() throws Throwable {
+		driver.findElement(By.xpath("//p[text()='Blog']")).click();
+		driver.findElement(By.xpath("//a[text()='Category List ']")).click();
+		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
+		Select sel=new Select(driver.findElement(By.xpath("//select[@class='form-control input-sm']")));
+		sel.selectByIndex(1);
+	}
+	@Test
+	public void blogAddBlog() throws Throwable {
+		driver.findElement(By.xpath("//p[text()='Blog']")).click();
+		driver.findElement(By.xpath("//a[text()='Add Blog ']")).click();
+		Select sel=new Select(driver.findElement(By.id("categoryId")));
+		sel.selectByIndex(1);
 	}
 }
