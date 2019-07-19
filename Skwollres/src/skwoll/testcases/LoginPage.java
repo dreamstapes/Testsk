@@ -3,23 +3,51 @@ package skwoll.testcases;
 //import java.io.File;
 //import java.io.FileInputStream;
 //import java.io.FileOutputStream;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
+//import java.util.concurrent.TimeUnit;
+//
+//import org.openqa.selenium.By;
 //import org.apache.poi.ss.usermodel.Cell;
 //import org.apache.poi.ss.usermodel.Row;
 //import org.apache.poi.xssf.usermodel.XSSFSheet;
 //import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
+//import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.interactions.Actions;
 //import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LoginPage {
-
-	public static void main(String[] args) throws Throwable {
-		WebDriver driver=new ChromeDriver();
+//	public class Test {
+	    
+	
+		private int id;
+		private String name;
+		private String address;
+		public LoginPage(int id) 
+		{
+			this.id=id;
+		}
+		public int getId()
+		{
+			return id;
+		}
+		public String getName()
+		{
+			return name;
+		}
+		public String getAddress()
+		{
+			return address;
+		}
+		public void setName(String name)
+		{
+			this.name=name;
+		}
+		public void setAddress(String address)
+		{
+			this.address=address;
+		}}
+/**		WebDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.get("http://www.blackjackdc.com/");
 		driver.manage().window().maximize();
@@ -56,6 +84,5 @@ public class LoginPage {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='Logged out.']")).click();
 		driver.close();**/
-	}
 
-}
+

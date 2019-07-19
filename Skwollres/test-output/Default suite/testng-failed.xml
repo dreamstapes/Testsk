@@ -5,11 +5,24 @@
     <classes>
       <class name="skwolladmin.testcases.TestcasesAdmin">
         <methods>
+          <include name="massNotification"/>
+          <include name="skwollImageAddImage"/>
+          <include name="menuCanvasSubCategoryList"/>
           <include name="skwollCB"/>
-          <include name="skwollLO"/>
-          <include name="skwollLN"/>
-          <include name="welcomeDrink"/>
+          <include name="bartender"/>
+          <include name="menuCanvasCategoryList"/>
+          <include name="bartenderList"/>
           <include name="skwollLB"/>
+          <include name="skwollImageList"/>
+          <include name="massNotificationList"/>
+          <include name="menuCanvasAddCategory"/>
+          <include name="skwollImageCategoryList"/>
+          <include name="skwollImage"/>
+          <include name="skwollLO"/>
+          <include name="skwollImageAddSubCategory"/>
+          <include name="skwollImageSubCategoryList"/>
+          <include name="skwollLN"/>
+          <include name="menuCanvasAddsubCategory"/>
         </methods>
       </class> <!-- skwolladmin.testcases.TestcasesAdmin -->
     </classes>
