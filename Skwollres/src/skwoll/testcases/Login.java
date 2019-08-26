@@ -4,6 +4,7 @@ public class Login {
 
 	public static void main(String[] args) {
 	  String str="This is a dreams";
+	  
 //	  String d="This is a stapes";
 //	  Object objStr=str;
 //	  System.out.println(str.compareTo(d));
