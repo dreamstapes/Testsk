@@ -9,54 +9,25 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">25,147</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">16</td><td class="num">0</td><td class="num">0</td><td class="num">306,675</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">skwolladmin.testcases.TestcasesAdmin</td><td><a href="#m0">venuesAdd</a></td><td rowspan="1">1566897553747</td><td rowspan="1">1781</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="16">skwoll.testcases.LoginTest</td><td><a href="#m0">Dashboard</a></td><td rowspan="1">1566914013094</td><td rowspan="1">10718</td></tr><tr class="passedeven"><td><a href="#m1">addHappyHour</a></td><td rowspan="1">1566914030842</td><td rowspan="1">14981</td></tr><tr class="passedeven"><td><a href="#m2">editStripe</a></td><td rowspan="1">1566914054527</td><td rowspan="1">8731</td></tr><tr class="passedeven"><td><a href="#m3">eventList</a></td><td rowspan="1">1566914069270</td><td rowspan="1">3740</td></tr><tr class="passedeven"><td><a href="#m4">happyHourList</a></td><td rowspan="1">1566914079154</td><td rowspan="1">4815</td></tr><tr class="passedeven"><td><a href="#m5">menuAddCategory</a></td><td rowspan="1">1566914090053</td><td rowspan="1">4464</td></tr><tr class="passedeven"><td><a href="#m6">menuAddProduct</a></td><td rowspan="1">1566914100486</td><td rowspan="1">22010</td></tr><tr class="passedeven"><td><a href="#m7">menuAddSubcategory</a></td><td rowspan="1">1566914128679</td><td rowspan="1">9133</td></tr><tr class="passedeven"><td><a href="#m8">menuCategoryList</a></td><td rowspan="1">1566914144033</td><td rowspan="1">5033</td></tr><tr class="passedeven"><td><a href="#m9">menuSubcategoryList</a></td><td rowspan="1">1566914155593</td><td rowspan="1">2790</td></tr><tr class="passedeven"><td><a href="#m10">menuWelComeDrink</a></td><td rowspan="1">1566914164832</td><td rowspan="1">12053</td></tr><tr class="passedeven"><td><a href="#m11">order</a></td><td rowspan="1">1566914183131</td><td rowspan="1">7002</td></tr><tr class="passedeven"><td><a href="#m12">otherProductList</a></td><td rowspan="1">1566914196377</td><td rowspan="1">27970</td></tr><tr class="passedeven"><td><a href="#m13">payOut</a></td><td rowspan="1">1566914230938</td><td rowspan="1">4000</td></tr><tr class="passedeven"><td><a href="#m14">setting</a></td><td rowspan="1">1566914245182</td><td rowspan="1">4421</td></tr><tr class="passedeven"><td><a href="#m15">viewProfile</a></td><td rowspan="1">1566914256147</td><td rowspan="1">7160</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">skwolladmin.testcases.TestcasesAdmin#venuesAdd</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidArgumentException: Cannot click &lt;input type=file&gt; elements
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DREAMS-PC&apos;, ip: &apos;192.168.1.38&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;9.0.4&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190717172542, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 9264, moz:profile: C:\Users\DREAMS\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9a07f507-dd0b-4776-a1eb-e612c1d0c0f0
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at skwolladmin.testcases.TestcasesAdmin.venuesAdd(TestcasesAdmin.java:185)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">skwoll.testcases.LoginTest#Dashboard</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">skwoll.testcases.LoginTest#addHappyHour</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">skwoll.testcases.LoginTest#editStripe</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">skwoll.testcases.LoginTest#eventList</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">skwoll.testcases.LoginTest#happyHourList</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">skwoll.testcases.LoginTest#menuAddCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">skwoll.testcases.LoginTest#menuAddProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">skwoll.testcases.LoginTest#menuAddSubcategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">skwoll.testcases.LoginTest#menuCategoryList</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">skwoll.testcases.LoginTest#menuSubcategoryList</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">skwoll.testcases.LoginTest#menuWelComeDrink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">skwoll.testcases.LoginTest#order</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">skwoll.testcases.LoginTest#otherProductList</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">skwoll.testcases.LoginTest#payOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">skwoll.testcases.LoginTest#setting</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">skwoll.testcases.LoginTest#viewProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

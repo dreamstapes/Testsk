@@ -3,15 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="skwolladmin.testcases.TestcasesAdmin">
+      <class name="skwoll.testcases.LoginTest">
         <methods>
-          <include name="skwollCB"/>
-          <include name="venuesAdd"/>
-          <include name="skwollLO"/>
-          <include name="skwollLN"/>
+          <include name="changePassword"/>
+          <include name="menuProductList"/>
           <include name="skwollLB"/>
+          <include name="skwollLO"/>
+          <include name="editProfile"/>
+          <include name="skwollLN"/>
+          <include name="skwollCB"/>
+          <include name="salesReport"/>
+          <include name="addEvent"/>
         </methods>
-      </class> <!-- skwolladmin.testcases.TestcasesAdmin -->
+      </class> <!-- skwoll.testcases.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
