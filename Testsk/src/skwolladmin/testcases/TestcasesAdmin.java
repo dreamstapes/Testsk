@@ -165,19 +165,19 @@ public class TestcasesAdmin extends BaseClass{
 		Select sel=new Select(driver.findElement(By.xpath("//select[@class='form-control input-sm']")));
 		sel.selectByIndex(1);
 	}
-//	@Test
-//	public void venuesCategories() throws Throwable {
-//		driver.findElement(By.xpath("//p[text()='Venues']")).click();
-//		driver.findElement(By.xpath("//a[text()='Venue categories ']")).click();
-//		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
-//		Select sel=new Select(driver.findElement(By.xpath("//select[@class='form-control input-sm']")));
-//		sel.selectByIndex(1);
-//		driver.findElement(By.xpath("//a[text()='Add a venue category ']")).click();
-//		Thread.sleep(2000);
-//		driver.findElement(By.id("categoryName")).sendKeys(flb.getPropertyKeyValue("CategoryName"));
-//		driver.findElement(By.xpath("//button[text()='Save']")).click();
-//		System.out.println(driver.findElement(By.xpath("//span[text()='Record already exists.']")));
-//	}
+	@Test
+	public void venuesCategories() throws Throwable {
+		driver.findElement(By.xpath("//p[text()='Venues']")).click();
+		driver.findElement(By.xpath("//a[text()='Venue categories ']")).click();
+		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
+		Select sel=new Select(driver.findElement(By.xpath("//select[@class='form-control input-sm']")));
+		sel.selectByIndex(1);
+		driver.findElement(By.xpath("//a[text()='Add a venue category ']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("categoryName")).sendKeys(flb.getPropertyKeyValue("CategoryName"));
+		driver.findElement(By.xpath("//button[text()='Save']")).click();
+		System.out.println(driver.findElement(By.xpath("//span[text()='Record already exists.']")));
+	}
 	@Test
 	public void venuesAdd() throws Throwable {
 		driver.findElement(By.xpath("//p[text()='Venues']")).click();
