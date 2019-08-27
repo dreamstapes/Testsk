@@ -328,21 +328,21 @@ public class TestcasesAdmin extends BaseClass{
 		Select sel=new Select(driver.findElement(By.xpath("//select[@class='form-control input-sm']")));
 		sel.selectByIndex(1);
 	}
-	@Test
-	public void blogAddBlog() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='Blog']")).click();
-		driver.findElement(By.xpath("//a[text()='Add Blog ']")).click();
-		Select sel=new Select(driver.findElement(By.id("categoryId")));
-		sel.selectByIndex(1);
-		driver.findElement(By.xpath("//input[@class='file-input']")).click();
-		driver.findElement(By.id("title")).sendKeys(flb.getPropertyKeyValue("BlogTitle"));
-		driver.findElement(By.id("description")).sendKeys(flb.getPropertyKeyValue("Description"));
-		driver.findElement(By.id("tags")).sendKeys(flb.getPropertyKeyValue("Tags"));
-		driver.findElement(By.id("metaTitle")).sendKeys(flb.getPropertyKeyValue("BlogMetaTitle"));
-		driver.findElement(By.id("metaKeywords")).sendKeys(flb.getPropertyKeyValue("BlogMetaKeywords"));
-		driver.findElement(By.id("metaDescription")).sendKeys(flb.getPropertyKeyValue("BlogMetaDescription"));
-		driver.findElement(By.xpath("//button[text()='Add Blog']")).click();
-	}
+//	@Test
+//	public void blogAddBlog() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='Blog']")).click();
+//		driver.findElement(By.xpath("//a[text()='Add Blog ']")).click();
+//		Select sel=new Select(driver.findElement(By.id("categoryId")));
+//		sel.selectByIndex(1);
+//		driver.findElement(By.xpath("//input[@class='file-input']")).click();
+//		driver.findElement(By.id("title")).sendKeys(flb.getPropertyKeyValue("BlogTitle"));
+//		driver.findElement(By.id("description")).sendKeys(flb.getPropertyKeyValue("Description"));
+//		driver.findElement(By.id("tags")).sendKeys(flb.getPropertyKeyValue("Tags"));
+//		driver.findElement(By.id("metaTitle")).sendKeys(flb.getPropertyKeyValue("BlogMetaTitle"));
+//		driver.findElement(By.id("metaKeywords")).sendKeys(flb.getPropertyKeyValue("BlogMetaKeywords"));
+//		driver.findElement(By.id("metaDescription")).sendKeys(flb.getPropertyKeyValue("BlogMetaDescription"));
+//		driver.findElement(By.xpath("//button[text()='Add Blog']")).click();
+//	}
 	@Test
 	public void blogList() throws Throwable {
 		driver.findElement(By.xpath("//p[text()='Blog']")).click();
@@ -359,24 +359,24 @@ public class TestcasesAdmin extends BaseClass{
 		Select sel=new Select(driver.findElement(By.xpath("//select[@class='form-control input-sm']")));
 		sel.selectByIndex(1);
 	}
-	@Test
-	public void addEvent() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='Events']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()='Add events']")).click();
-		driver.findElement(By.xpath("//input[@class='file-input upload-banner']")).click();
-		Select sel=new Select(driver.findElement(By.id("subscriptionplan")));
-		sel.selectByIndex(1);
-		Thread.sleep(4000);
-		driver.findElement(By.id("websiteUrl")).sendKeys(flb.getPropertyKeyValue("EventURL"));
-		driver.findElement(By.id("card_num")).sendKeys(flb.getPropertyKeyValue("CardNumber"));
-		driver.findElement(By.id("cvc")).sendKeys(flb.getPropertyKeyValue("CVV"));
-		Select sel1=new Select(driver.findElement(By.id("exp_month")));
-		sel1.selectByIndex(0);
-		Select sel2=new Select(driver.findElement(By.id("exp_year")));
-		sel2.selectByIndex(0);
-		driver.findElement(By.xpath("//button[text()='Save Event']")).click();
-	}
+//	@Test
+//	public void addEvent() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='Events']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()='Add events']")).click();
+//		driver.findElement(By.xpath("//input[@class='file-input upload-banner']")).click();
+//		Select sel=new Select(driver.findElement(By.id("subscriptionplan")));
+//		sel.selectByIndex(1);
+//		Thread.sleep(4000);
+//		driver.findElement(By.id("websiteUrl")).sendKeys(flb.getPropertyKeyValue("EventURL"));
+//		driver.findElement(By.id("card_num")).sendKeys(flb.getPropertyKeyValue("CardNumber"));
+//		driver.findElement(By.id("cvc")).sendKeys(flb.getPropertyKeyValue("CVV"));
+//		Select sel1=new Select(driver.findElement(By.id("exp_month")));
+//		sel1.selectByIndex(0);
+//		Select sel2=new Select(driver.findElement(By.id("exp_year")));
+//		sel2.selectByIndex(0);
+//		driver.findElement(By.xpath("//button[text()='Save Event']")).click();
+//	}
 	@Test
 	public void eventList() throws Throwable {
 		driver.findElement(By.xpath("//p[text()='Events']")).click();
@@ -490,49 +490,49 @@ public class TestcasesAdmin extends BaseClass{
 		sel.selectByIndex(1);
 		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
 	}
-	@Test
-	public void bartender() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='Bartender']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()='Add Bartender']")).click();
-		driver.findElement(By.xpath("//input[@class='file-input']")).click();
-		Select sel=new Select(driver.findElement(By.id("serve")));
-		sel.selectByIndex(1);
-		Select sel1=new Select(driver.findElement(By.id("restaurantId")));
-		sel1.selectByIndex(1);
-		driver.findElement(By.id("bartenderName")).sendKeys(flb.getPropertyKeyValue("BartenderName"));
-		driver.findElement(By.id("email")).sendKeys(flb.getPropertyKeyValue("EmailID"));
-		driver.findElement(By.id("mobile")).sendKeys(flb.getPropertyKeyValue("search"));
-		Select sel2=new Select(driver.findElement(By.id("gender")));
-		sel2.selectByIndex(1);
-		driver.findElement(By.id("txtdob")).sendKeys(flb.getPropertyKeyValue("DateOfBirth"));
-		driver.findElement(By.id("selCountry")).sendKeys(flb.getPropertyKeyValue("Country"));
-		driver.findElement(By.id("selState")).sendKeys(flb.getPropertyKeyValue("State"));
-		driver.findElement(By.id("selCity")).sendKeys(flb.getPropertyKeyValue("City"));
-		driver.findElement(By.id("address")).sendKeys(flb.getPropertyKeyValue("Address"));
-		driver.findElement(By.id("txtpostalCode")).sendKeys(flb.getPropertyKeyValue("PostalCode"));
-		driver.findElement(By.id("txtpassword")).sendKeys(flb.getPropertyKeyValue("Password"));
-		driver.findElement(By.xpath("//button[text()='Save Bartender']")).click();
-	}
-	@Test
-	public void bartenderList() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='Bartender']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()=' Bartender List ']")).click();
-		Select sel=new Select(driver.findElement(By.xpath("//select[@class=('form-control input-sm')]")));
-		sel.selectByIndex(1);
-		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
-	}
-	@Test
-	public void skwollImage() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()='Add Category']")).click();
-		Select sel=new Select(driver.findElement(By.id("type")));
-		sel.selectByIndex(1);
-		driver.findElement(By.id("categoryName")).sendKeys(flb.getPropertyKeyValue("CategoryName"));
-		driver.findElement(By.xpath("//button[text()='Save']")).click();
-	}
+//	@Test
+//	public void bartender() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='Bartender']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()='Add Bartender']")).click();
+//		driver.findElement(By.xpath("//input[@class='file-input']")).click();
+//		Select sel=new Select(driver.findElement(By.id("serve")));
+//		sel.selectByIndex(1);
+//		Select sel1=new Select(driver.findElement(By.id("restaurantId")));
+//		sel1.selectByIndex(1);
+//		driver.findElement(By.id("bartenderName")).sendKeys(flb.getPropertyKeyValue("BartenderName"));
+//		driver.findElement(By.id("email")).sendKeys(flb.getPropertyKeyValue("EmailID"));
+//		driver.findElement(By.id("mobile")).sendKeys(flb.getPropertyKeyValue("search"));
+//		Select sel2=new Select(driver.findElement(By.id("gender")));
+//		sel2.selectByIndex(1);
+//		driver.findElement(By.id("txtdob")).sendKeys(flb.getPropertyKeyValue("DateOfBirth"));
+//		driver.findElement(By.id("selCountry")).sendKeys(flb.getPropertyKeyValue("Country"));
+//		driver.findElement(By.id("selState")).sendKeys(flb.getPropertyKeyValue("State"));
+//		driver.findElement(By.id("selCity")).sendKeys(flb.getPropertyKeyValue("City"));
+//		driver.findElement(By.id("address")).sendKeys(flb.getPropertyKeyValue("Address"));
+//		driver.findElement(By.id("txtpostalCode")).sendKeys(flb.getPropertyKeyValue("PostalCode"));
+//		driver.findElement(By.id("txtpassword")).sendKeys(flb.getPropertyKeyValue("Password"));
+//		driver.findElement(By.xpath("//button[text()='Save Bartender']")).click();
+//	}
+//	@Test
+//	public void bartenderList() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='Bartender']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()=' Bartender List ']")).click();
+//		Select sel=new Select(driver.findElement(By.xpath("//select[@class=('form-control input-sm')]")));
+//		sel.selectByIndex(1);
+//		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
+//	}
+//	@Test
+//	public void skwollImage() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()='Add Category']")).click();
+//		Select sel=new Select(driver.findElement(By.id("type")));
+//		sel.selectByIndex(1);
+//		driver.findElement(By.id("categoryName")).sendKeys(flb.getPropertyKeyValue("CategoryName"));
+//		driver.findElement(By.xpath("//button[text()='Save']")).click();
+//	}
 	@Test
 	public void skwollImageCategoryList() throws Throwable {
 		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
@@ -542,42 +542,42 @@ public class TestcasesAdmin extends BaseClass{
 		sel.selectByIndex(1);
 		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
 	}
-	@Test
-	public void skwollImageAddSubCategory() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()=' Category List ']")).click();
-		Select sel=new Select(driver.findElement(By.id("type")));
-		sel.selectByIndex(1);
-		Select sel1=new Select(driver.findElement(By.id("categoryId")));
-		sel1.selectByIndex(1);
-		driver.findElement(By.id("subcategoryName")).sendKeys(flb.getPropertyKeyValue("SubcategoryName"));
-		driver.findElement(By.xpath("//button[text()='Save']")).click();
-	}
-	@Test
-	public void skwollImageSubCategoryList() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()=' Subcategory List ']")).click();
-		Select sel=new Select(driver.findElement(By.xpath("//select[@class=('form-control input-sm')]")));
-		sel.selectByIndex(1);
-		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
-	}
-	@Test
-	public void skwollImageAddImage() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()='Add Image']")).click();
-		Select sel=new Select(driver.findElement(By.id("type")));
-		sel.selectByIndex(1);
-		Select sel1=new Select(driver.findElement(By.id("categoryId")));
-		sel1.selectByIndex(1);
-		Select sel2=new Select(driver.findElement(By.id("subcategoryId")));
-		sel2.selectByIndex(1);
-		driver.findElement(By.xpath("//a[text()=' Add More']")).click();
-		driver.findElement(By.xpath("//input[@class='galleryFile']")).click();
-		driver.findElement(By.xpath("//button[text()='upload']")).click();
-	}
+//	@Test
+//	public void skwollImageAddSubCategory() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()=' Category List ']")).click();
+//		Select sel=new Select(driver.findElement(By.id("type")));
+//		sel.selectByIndex(1);
+//		Select sel1=new Select(driver.findElement(By.id("categoryId")));
+//		sel1.selectByIndex(1);
+//		driver.findElement(By.id("subcategoryName")).sendKeys(flb.getPropertyKeyValue("SubcategoryName"));
+//		driver.findElement(By.xpath("//button[text()='Save']")).click();
+//	}
+//	@Test
+//	public void skwollImageSubCategoryList() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()=' Subcategory List ']")).click();
+//		Select sel=new Select(driver.findElement(By.xpath("//select[@class=('form-control input-sm')]")));
+//		sel.selectByIndex(1);
+//		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
+//	}
+//	@Test
+//	public void skwollImageAddImage() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()='Add Image']")).click();
+//		Select sel=new Select(driver.findElement(By.id("type")));
+//		sel.selectByIndex(1);
+//		Select sel1=new Select(driver.findElement(By.id("categoryId")));
+//		sel1.selectByIndex(1);
+//		Select sel2=new Select(driver.findElement(By.id("subcategoryId")));
+//		sel2.selectByIndex(1);
+//		driver.findElement(By.xpath("//a[text()=' Add More']")).click();
+//		driver.findElement(By.xpath("//input[@class='galleryFile']")).click();
+//		driver.findElement(By.xpath("//button[text()='upload']")).click();
+//	}
 	@Test
 	public void skwollImageList() throws Throwable {
 		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
@@ -587,59 +587,59 @@ public class TestcasesAdmin extends BaseClass{
 		sel.selectByIndex(1);
 		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
 	}
-	@Test
-	public void menuCanvasAddCategory() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='Menu Canvas ']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()='Add Category']")).click();
-		Select sel=new Select(driver.findElement(By.id("type")));
-		sel.selectByIndex(1);
-		driver.findElement(By.id("categoryName")).sendKeys(flb.getPropertyKeyValue("CategoryName"));
-		driver.findElement(By.xpath("//button[text()='Save']")).click();
-	}
-	@Test
-	public void menuCanvasCategoryList() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='Menu Canvas ']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()=' Category List ']")).click();
-		Select sel=new Select(driver.findElement(By.xpath("//select[@class=('form-control input-sm')]")));
-		sel.selectByIndex(1);
-		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
-	}
-	@Test
-	public void menuCanvasAddsubCategory() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='Menu Canvas ']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()=' Category List ']")).click();
-		Select sel=new Select(driver.findElement(By.id("type")));
-		sel.selectByIndex(1);
-		Select sel1=new Select(driver.findElement(By.id("categoryId")));
-		sel1.selectByIndex(1);
-		driver.findElement(By.id("subcategoryName")).sendKeys(flb.getPropertyKeyValue("SubcategoryName"));
-		driver.findElement(By.xpath("//button[text()='Save']")).click();
-	}
-	@Test
-	public void menuCanvasSubCategoryList() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='Menu Canvas ']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()=' Subcategory List ']")).click();
-		Select sel=new Select(driver.findElement(By.xpath("//select[@class=('form-control input-sm')]")));
-		sel.selectByIndex(1);
-		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
-	}
-	@Test
-	public void massNotification() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='Mass Notification']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()='Send']")).click();
-		Select sel=new Select(driver.findElement(By.id("sendTo")));
-		sel.selectByIndex(1);
-		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
-		driver.findElement(By.xpath("//textarea[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
-		driver.findElement(By.xpath("//textarea[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
-		driver.findElement(By.id("uploadImg")).click();
-		driver.findElement(By.xpath("//button[text()='Send']")).click();
-	}
+//	@Test
+//	public void menuCanvasAddCategory() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='Menu Canvas ']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()='Add Category']")).click();
+//		Select sel=new Select(driver.findElement(By.id("type")));
+//		sel.selectByIndex(1);
+//		driver.findElement(By.id("categoryName")).sendKeys(flb.getPropertyKeyValue("CategoryName"));
+//		driver.findElement(By.xpath("//button[text()='Save']")).click();
+//	}
+//	@Test
+//	public void menuCanvasCategoryList() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='Menu Canvas ']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()=' Category List ']")).click();
+//		Select sel=new Select(driver.findElement(By.xpath("//select[@class=('form-control input-sm')]")));
+//		sel.selectByIndex(1);
+//		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
+//	}
+//	@Test
+//	public void menuCanvasAddsubCategory() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='Menu Canvas ']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()=' Category List ']")).click();
+//		Select sel=new Select(driver.findElement(By.id("type")));
+//		sel.selectByIndex(1);
+//		Select sel1=new Select(driver.findElement(By.id("categoryId")));
+//		sel1.selectByIndex(1);
+//		driver.findElement(By.id("subcategoryName")).sendKeys(flb.getPropertyKeyValue("SubcategoryName"));
+//		driver.findElement(By.xpath("//button[text()='Save']")).click();
+//	}
+//	@Test
+//	public void menuCanvasSubCategoryList() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='Menu Canvas ']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()=' Subcategory List ']")).click();
+//		Select sel=new Select(driver.findElement(By.xpath("//select[@class=('form-control input-sm')]")));
+//		sel.selectByIndex(1);
+//		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
+//	}
+//	@Test
+//	public void massNotification() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='Mass Notification']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()='Send']")).click();
+//		Select sel=new Select(driver.findElement(By.id("sendTo")));
+//		sel.selectByIndex(1);
+//		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
+//		driver.findElement(By.xpath("//textarea[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
+//		driver.findElement(By.xpath("//textarea[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
+//		driver.findElement(By.id("uploadImg")).click();
+//		driver.findElement(By.xpath("//button[text()='Send']")).click();
+//	}
 	@Test
 	public void massNotificationList() throws Throwable {
 		driver.findElement(By.xpath("//p[text()='Mass Notification']")).click();
