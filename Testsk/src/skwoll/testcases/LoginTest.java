@@ -24,9 +24,9 @@ public class LoginTest extends BaseClass{
 		System.out.println(driver.findElement(By.xpath("//span[text()='Dashboard']")).getText());
 		driver.findElement(By.xpath("//a[text()='Overall']")).click();
 		System.out.println(driver.findElement(By.xpath("//a[text()='Overall']")).getText());
-	//	String x="//h3[text()='Added products']/h2";
-	//	String number=driver.findElement(By.xpath(x)).getText();
-	//	System.out.println(number);
+		String x="//h3[text()='Added products']/h2";
+		String number=driver.findElement(By.xpath(x)).getText();
+		System.out.println(number);
 		driver.findElement(By.xpath("//a[text()='Today']")).click();
 		System.out.println(driver.findElement(By.xpath("//a[text()='Today']")).getText());
 		driver.findElement(By.xpath("//a[text()='Last week']")).click();
