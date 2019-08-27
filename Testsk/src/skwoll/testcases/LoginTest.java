@@ -34,17 +34,17 @@ public class LoginTest extends BaseClass{
 		driver.findElement(By.xpath("//a[text()='Yearly']")).click();
 		System.out.println(driver.findElement(By.xpath("//a[text()='Yearly']")).getText());
 	}
-	@Test
-	public void salesReport() throws Throwable {
-		driver.findElement(By.xpath("//a[text()='Sales Report']")).click();
-		driver.findElement(By.id("daterange")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//button[text()='Apply']")).click();
-//		driver.findElement(By.xpath("//button[text()='Cancel']")).click();
-		driver.findElement(By.xpath("//button[text()='Export']")).click();
-		driver.findElement(By.xpath("//a[text()='Export PDF']")).click();
-//		driver.findElement(By.xpath("//a[text()='Send as Email']")).click();
-	}
+//	@Test
+//	public void salesReport() throws Throwable {
+//		driver.findElement(By.xpath("//a[text()='Sales Report']")).click();
+//		driver.findElement(By.id("daterange")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//button[text()='Apply']")).click();
+////		driver.findElement(By.xpath("//button[text()='Cancel']")).click();
+//		driver.findElement(By.xpath("//button[text()='Export']")).click();
+//		driver.findElement(By.xpath("//a[text()='Export PDF']")).click();
+////		driver.findElement(By.xpath("//a[text()='Send as Email']")).click();
+//	}
 /**	@AfterMethod
 	public void tearDown(ITestListener result) {
 		if(ITestListener.FAILURE==result.getStatus()) {
@@ -170,55 +170,55 @@ public class LoginTest extends BaseClass{
 		driver.findElement(By.xpath("//button[text()='Save Product']")).click();
 
 	}
-	@Test
-	public void menuProductList() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='Menu']")).click();
-		driver.findElement(By.xpath("//a[text()=' Product List ']")).click();
-		driver.findElement(By.xpath("//button[text()='Multiple Product Edit']")).click();
-		System.out.println(driver.findElement(By.xpath("//span[text()='Please Select Product']")).getText());
-		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@name='select_all']")).click();
-		driver.findElement(By.xpath("//button[text()='Multiple Product Edit']")).click();
-		driver.findElement(By.xpath("//label[text()='Image']")).click();
-		driver.findElement(By.xpath("//label[text()='Type / Category / Subcategory']")).click();
-		driver.findElement(By.xpath("//label[text()='Name']")).click();
-		driver.findElement(By.xpath("//label[text()='Description']")).click();
-		driver.findElement(By.xpath("//label[text()='Product Tags']")).click();
-		driver.findElement(By.xpath("//label[text()='Price']")).click();
-		driver.findElement(By.id("previewImg")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//label[text()='Food']")).click();
-		driver.findElement(By.xpath("//div[@class='image']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//button[text()='Done']")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.id("selCategory")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//option[text()='Food']")).click();
-	//	driver.findElement(By.xpath("//option[text()='Drink']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.id("selSubcategoryId")).click();
-		Thread.sleep(2000);
-		String wb=flb.getPropertyKeyValue("CategoryName");
-		String path = "//option[text()="+"'"+wb+"']";
-		driver.findElement(By.xpath(path)).click();
-		driver.findElement(By.id("selSubcategoryitemId")).click();
-		Thread.sleep(2000);
-		String sc=flb.getPropertyKeyValue("SubcategoryName");
-		String scpath = "//option[text()="+"'"+sc+"']";
-		driver.findElement(By.xpath(scpath)).click();
-		driver.findElement(By.id("txtProductName")).sendKeys(flb.getPropertyKeyValue("ProductName"));
-		driver.findElement(By.id("txtsortDescription")).sendKeys(flb.getPropertyKeyValue("ProductFullDescription"));
-		driver.findElement(By.id("txtTags")).sendKeys(flb.getPropertyKeyValue("ProductTags"));
-		driver.findElement(By.xpath("//a[text()='Fr']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()='Gr']")).click();
-		driver.findElement(By.xpath("//a[text()='It']")).click();
-		driver.findElement(By.id("txtPrice")).sendKeys(flb.getPropertyKeyValue("MultipleProductPrice"));
-	//	driver.findElement(By.xpath("//button[text()='Update Product']")).click();
-		driver.findElement(By.xpath("//a[text()='Cancel']")).click();
-	}
+//	@Test
+//	public void menuProductList() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='Menu']")).click();
+//		driver.findElement(By.xpath("//a[text()=' Product List ']")).click();
+//		driver.findElement(By.xpath("//button[text()='Multiple Product Edit']")).click();
+//		System.out.println(driver.findElement(By.xpath("//span[text()='Please Select Product']")).getText());
+//		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//input[@name='select_all']")).click();
+//		driver.findElement(By.xpath("//button[text()='Multiple Product Edit']")).click();
+//		driver.findElement(By.xpath("//label[text()='Image']")).click();
+//		driver.findElement(By.xpath("//label[text()='Type / Category / Subcategory']")).click();
+//		driver.findElement(By.xpath("//label[text()='Name']")).click();
+//		driver.findElement(By.xpath("//label[text()='Description']")).click();
+//		driver.findElement(By.xpath("//label[text()='Product Tags']")).click();
+//		driver.findElement(By.xpath("//label[text()='Price']")).click();
+//		driver.findElement(By.id("previewImg")).click();
+//		Thread.sleep(3000);
+//		driver.findElement(By.xpath("//label[text()='Food']")).click();
+//		driver.findElement(By.xpath("//div[@class='image']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//button[text()='Done']")).click();
+//		Thread.sleep(1000);
+//		driver.findElement(By.id("selCategory")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//option[text()='Food']")).click();
+//	//	driver.findElement(By.xpath("//option[text()='Drink']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.id("selSubcategoryId")).click();
+//		Thread.sleep(2000);
+//		String wb=flb.getPropertyKeyValue("CategoryName");
+//		String path = "//option[text()="+"'"+wb+"']";
+//		driver.findElement(By.xpath(path)).click();
+//		driver.findElement(By.id("selSubcategoryitemId")).click();
+//		Thread.sleep(2000);
+//		String sc=flb.getPropertyKeyValue("SubcategoryName");
+//		String scpath = "//option[text()="+"'"+sc+"']";
+//		driver.findElement(By.xpath(scpath)).click();
+//		driver.findElement(By.id("txtProductName")).sendKeys(flb.getPropertyKeyValue("ProductName"));
+//		driver.findElement(By.id("txtsortDescription")).sendKeys(flb.getPropertyKeyValue("ProductFullDescription"));
+//		driver.findElement(By.id("txtTags")).sendKeys(flb.getPropertyKeyValue("ProductTags"));
+//		driver.findElement(By.xpath("//a[text()='Fr']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()='Gr']")).click();
+//		driver.findElement(By.xpath("//a[text()='It']")).click();
+//		driver.findElement(By.id("txtPrice")).sendKeys(flb.getPropertyKeyValue("MultipleProductPrice"));
+//	//	driver.findElement(By.xpath("//button[text()='Update Product']")).click();
+//		driver.findElement(By.xpath("//a[text()='Cancel']")).click();
+//	}
 	@Test
 	public void menuWelComeDrink() throws Throwable {
 		driver.findElement(By.xpath("//p[text()='Menu']")).click();
@@ -278,23 +278,23 @@ public class LoginTest extends BaseClass{
 		Select sel=new Select(driver.findElement(By.xpath("//select[@class='form-control input-sm']")));
 		sel.selectByIndex(1);
 	}
-	@Test
-	public void addEvent() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='Event']")).click();
-		driver.findElement(By.xpath("//a[text()='Add Event']")).click();
-		driver.findElement(By.xpath("//input[@class='file-input upload-banner']")).click();
-		Select sel=new Select(driver.findElement(By.id("subscriptionplan")));
-		sel.selectByIndex(1);
-		Thread.sleep(4000);
-		driver.findElement(By.id("websiteUrl")).sendKeys(flb.getPropertyKeyValue("EventURL"));
-		driver.findElement(By.id("card_num")).sendKeys(flb.getPropertyKeyValue("CardNumber"));
-		driver.findElement(By.id("cvc")).sendKeys(flb.getPropertyKeyValue("CVV"));
-		Select sel1=new Select(driver.findElement(By.id("exp_month")));
-		sel1.selectByIndex(0);
-		Select sel2=new Select(driver.findElement(By.id("exp_year")));
-		sel2.selectByIndex(0);
-		driver.findElement(By.xpath("//button[text()='Save Event']")).click();
-	}
+//	@Test
+//	public void addEvent() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='Event']")).click();
+//		driver.findElement(By.xpath("//a[text()='Add Event']")).click();
+//		driver.findElement(By.xpath("//input[@class='file-input upload-banner']")).click();
+//		Select sel=new Select(driver.findElement(By.id("subscriptionplan")));
+//		sel.selectByIndex(1);
+//		Thread.sleep(4000);
+//		driver.findElement(By.id("websiteUrl")).sendKeys(flb.getPropertyKeyValue("EventURL"));
+//		driver.findElement(By.id("card_num")).sendKeys(flb.getPropertyKeyValue("CardNumber"));
+//		driver.findElement(By.id("cvc")).sendKeys(flb.getPropertyKeyValue("CVV"));
+//		Select sel1=new Select(driver.findElement(By.id("exp_month")));
+//		sel1.selectByIndex(0);
+//		Select sel2=new Select(driver.findElement(By.id("exp_year")));
+//		sel2.selectByIndex(0);
+//		driver.findElement(By.xpath("//button[text()='Save Event']")).click();
+//	}
 	@Test
 	public void eventList() throws Throwable {
 		driver.findElement(By.xpath("//p[text()='Event']")).click();
@@ -311,40 +311,40 @@ public class LoginTest extends BaseClass{
 		driver.findElement(By.xpath("//a[text()='View Profile']")).click();
 		
 	}
-	@Test
-	public void editProfile() throws Throwable {
-		driver.findElement(By.xpath("//span[@class='drop_dp']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()='Edit Profile']")).click();
-		driver.findElement(By.id("bannerFile")).click();
-		driver.findElement(By.id("txtrestaurantName")).sendKeys(flb.getPropertyKeyValue("VenueName"));
-		driver.findElement(By.xpath("//label[text()='BAR']")).click();
-		driver.findElement(By.xpath("//label[text()='RESTAURANT']")).click();
-		driver.findElement(By.id("txtabout")).sendKeys(flb.getPropertyKeyValue("Description"));
-		driver.findElement(By.id("txtaddress1")).sendKeys(flb.getPropertyKeyValue("Address"));
-		driver.findElement(By.id("selCity")).sendKeys(flb.getPropertyKeyValue("City"));
-		driver.findElement(By.id("selState")).sendKeys(flb.getPropertyKeyValue("State"));
-		driver.findElement(By.id("selCountry")).sendKeys(flb.getPropertyKeyValue("Country"));
-		driver.findElement(By.id("txtpostalCode")).sendKeys(flb.getPropertyKeyValue("PostalCode"));
-		driver.findElement(By.id("txtcontactName")).sendKeys(flb.getPropertyKeyValue("ContactName"));
-		driver.findElement(By.id("txtmobile")).sendKeys(flb.getPropertyKeyValue("ContactPhone"));
-		driver.findElement(By.id("venuePhone")).sendKeys(flb.getPropertyKeyValue("VenuePhone"));
-		driver.findElement(By.id("txtsince")).sendKeys(flb.getPropertyKeyValue("OpenSince"));
-		Select sel=new Select(driver.findElement(By.id("openCloseType")));
-		sel.selectByVisibleText("Regular");
-		sel.selectByVisibleText("Week Days");
-		sel.selectByVisibleText("Specific date");
-		sel.selectByVisibleText("Specific date of month");
-		driver.findElement(By.id("txtwebsite")).sendKeys(flb.getPropertyKeyValue("Website"));
-		driver.findElement(By.id("txtiframe")).sendKeys(flb.getPropertyKeyValue("YetiVisitIFrame"));
-		driver.findElement(By.id("txtfacebookPageUrl")).sendKeys(flb.getPropertyKeyValue("FacebookLink"));
-		driver.findElement(By.id("txtinstagramPageUrl")).sendKeys(flb.getPropertyKeyValue("InstagramLink"));
-		driver.findElement(By.id("txttax")).sendKeys(flb.getPropertyKeyValue("Tax"));
-		driver.findElement(By.id("txtemail")).sendKeys(flb.getPropertyKeyValue("EmailID"));
-		driver.findElement(By.xpath("//input[@class='restaurantLogo']")).click();
-	//	driver.findElement(By.xpath("//input[@class='btn btn-warning add-more-image']")).click();
-		driver.findElement(By.xpath("//button[text()='Update']")).click();
-	}
+//	@Test
+//	public void editProfile() throws Throwable {
+//		driver.findElement(By.xpath("//span[@class='drop_dp']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()='Edit Profile']")).click();
+//		driver.findElement(By.id("bannerFile")).click();
+//		driver.findElement(By.id("txtrestaurantName")).sendKeys(flb.getPropertyKeyValue("VenueName"));
+//		driver.findElement(By.xpath("//label[text()='BAR']")).click();
+//		driver.findElement(By.xpath("//label[text()='RESTAURANT']")).click();
+//		driver.findElement(By.id("txtabout")).sendKeys(flb.getPropertyKeyValue("Description"));
+//		driver.findElement(By.id("txtaddress1")).sendKeys(flb.getPropertyKeyValue("Address"));
+//		driver.findElement(By.id("selCity")).sendKeys(flb.getPropertyKeyValue("City"));
+//		driver.findElement(By.id("selState")).sendKeys(flb.getPropertyKeyValue("State"));
+//		driver.findElement(By.id("selCountry")).sendKeys(flb.getPropertyKeyValue("Country"));
+//		driver.findElement(By.id("txtpostalCode")).sendKeys(flb.getPropertyKeyValue("PostalCode"));
+//		driver.findElement(By.id("txtcontactName")).sendKeys(flb.getPropertyKeyValue("ContactName"));
+//		driver.findElement(By.id("txtmobile")).sendKeys(flb.getPropertyKeyValue("ContactPhone"));
+//		driver.findElement(By.id("venuePhone")).sendKeys(flb.getPropertyKeyValue("VenuePhone"));
+//		driver.findElement(By.id("txtsince")).sendKeys(flb.getPropertyKeyValue("OpenSince"));
+//		Select sel=new Select(driver.findElement(By.id("openCloseType")));
+//		sel.selectByVisibleText("Regular");
+//		sel.selectByVisibleText("Week Days");
+//		sel.selectByVisibleText("Specific date");
+//		sel.selectByVisibleText("Specific date of month");
+//		driver.findElement(By.id("txtwebsite")).sendKeys(flb.getPropertyKeyValue("Website"));
+//		driver.findElement(By.id("txtiframe")).sendKeys(flb.getPropertyKeyValue("YetiVisitIFrame"));
+//		driver.findElement(By.id("txtfacebookPageUrl")).sendKeys(flb.getPropertyKeyValue("FacebookLink"));
+//		driver.findElement(By.id("txtinstagramPageUrl")).sendKeys(flb.getPropertyKeyValue("InstagramLink"));
+//		driver.findElement(By.id("txttax")).sendKeys(flb.getPropertyKeyValue("Tax"));
+//		driver.findElement(By.id("txtemail")).sendKeys(flb.getPropertyKeyValue("EmailID"));
+//		driver.findElement(By.xpath("//input[@class='restaurantLogo']")).click();
+//	//	driver.findElement(By.xpath("//input[@class='btn btn-warning add-more-image']")).click();
+//		driver.findElement(By.xpath("//button[text()='Update']")).click();
+//	}
 	@Test
 	public void editStripe() throws Throwable {
 		driver.findElement(By.xpath("//span[@class='drop_dp']")).click();
@@ -368,19 +368,19 @@ public class LoginTest extends BaseClass{
 		//Kitchen Open
 		driver.findElement(By.xpath("//span[text()='']")).click();**/
 	}
-	@Test
-	public void changePassword() throws Throwable {
-		driver.findElement(By.xpath("//span[@class='drop_dp']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()='Change Password']")).click();
-		driver.findElement(By.id("txtCurrentPassword")).sendKeys(flb.getPropertyKeyValue("OldPassword"));
-		driver.findElement(By.id("txtNewPassword")).sendKeys(flb.getPropertyKeyValue("NewPassword"));
-		driver.findElement(By.id("txtConfirmPassword")).sendKeys(flb.getPropertyKeyValue("ConfirmPassword"));
-		driver.findElement(By.id("btnChangePassword")).click();
-		String s=driver.findElement(By.xpath("//span[text()='Current password is incorrect.']")).getText();
-		System.out.println(s);
-	//	driver.findElement(By.xpath("//span[text()='Success! new password is set.']")).getText();
-	}
+//	@Test
+//	public void changePassword() throws Throwable {
+//		driver.findElement(By.xpath("//span[@class='drop_dp']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()='Change Password']")).click();
+//		driver.findElement(By.id("txtCurrentPassword")).sendKeys(flb.getPropertyKeyValue("OldPassword"));
+//		driver.findElement(By.id("txtNewPassword")).sendKeys(flb.getPropertyKeyValue("NewPassword"));
+//		driver.findElement(By.id("txtConfirmPassword")).sendKeys(flb.getPropertyKeyValue("ConfirmPassword"));
+//		driver.findElement(By.id("btnChangePassword")).click();
+//		String s=driver.findElement(By.xpath("//span[text()='Current password is incorrect.']")).getText();
+//		System.out.println(s);
+//	//	driver.findElement(By.xpath("//span[text()='Success! new password is set.']")).getText();
+//	}
 	@Test
 	public void payOut() throws Throwable {
 		driver.findElement(By.xpath("//p[text()='Payout']")).click();

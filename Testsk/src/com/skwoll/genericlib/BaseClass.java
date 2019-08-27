@@ -4,8 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.support.ui.Wait;
 //import org.openqa.selenium.support.ui.WebDriverWait;
 //import org.openqa.selenium.firefox.FirefoxDriver;
@@ -37,7 +37,7 @@ public class BaseClass {
 	}**/
 	@BeforeClass
 	public void skwollLB() {
-		driver=new ChromeDriver();
+		driver=new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}

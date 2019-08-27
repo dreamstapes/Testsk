@@ -182,7 +182,7 @@ public class TestcasesAdmin extends BaseClass{
 	public void venuesAdd() throws Throwable {
 		driver.findElement(By.xpath("//p[text()='Venues']")).click();
 		driver.findElement(By.xpath("//a[text()='Add venues']")).click();
-		driver.findElement(By.id("bannerFile")).click();
+//		driver.findElement(By.id("bannerFile")).click();
 		driver.findElement(By.id("txtrestaurantName")).sendKeys(flb.getPropertyKeyValue("VenueName"));
 		driver.findElement(By.xpath("//label[text()='BAR']")).click();
 		driver.findElement(By.xpath("//label[text()='RESTAURANT']")).click();
@@ -207,7 +207,7 @@ public class TestcasesAdmin extends BaseClass{
 		driver.findElement(By.id("txtinstagramPageUrl")).sendKeys(flb.getPropertyKeyValue("InstagramLink"));
 		driver.findElement(By.id("txttax")).sendKeys(flb.getPropertyKeyValue("Tax"));
 		driver.findElement(By.id("txtemail")).sendKeys(flb.getPropertyKeyValue("EmailID"));
-		driver.findElement(By.xpath("//input[@class='restaurantLogo']")).click();
+//		driver.findElement(By.xpath("//input[@class='restaurantLogo']")).click();
 	//	driver.findElement(By.xpath("//input[@class='btn btn-warning add-more-image']")).click();
 		driver.findElement(By.xpath("//button[text()='Save Restaurant']")).click();
 	}
@@ -533,15 +533,15 @@ public class TestcasesAdmin extends BaseClass{
 //		driver.findElement(By.id("categoryName")).sendKeys(flb.getPropertyKeyValue("CategoryName"));
 //		driver.findElement(By.xpath("//button[text()='Save']")).click();
 //	}
-	@Test
-	public void skwollImageCategoryList() throws Throwable {
-		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text()=' Category List ']")).click();
-		Select sel=new Select(driver.findElement(By.xpath("//select[@class=('form-control input-sm')]")));
-		sel.selectByIndex(1);
-		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
-	}
+//	@Test
+//	public void skwollImageCategoryList() throws Throwable {
+//		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[text()=' Category List ']")).click();
+//		Select sel=new Select(driver.findElement(By.xpath("//select[@class=('form-control input-sm')]")));
+//		sel.selectByIndex(1);
+//		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys(flb.getPropertyKeyValue("search"));
+//	}
 //	@Test
 //	public void skwollImageAddSubCategory() throws Throwable {
 //		driver.findElement(By.xpath("//p[text()='SKWOLL Image ']")).click();
