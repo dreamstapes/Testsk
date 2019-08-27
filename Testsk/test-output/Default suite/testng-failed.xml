@@ -5,15 +5,11 @@
     <classes>
       <class name="skwoll.testcases.LoginTest">
         <methods>
-          <include name="changePassword"/>
-          <include name="menuProductList"/>
+          <include name="Dashboard"/>
           <include name="skwollLB"/>
           <include name="skwollLO"/>
-          <include name="editProfile"/>
           <include name="skwollLN"/>
           <include name="skwollCB"/>
-          <include name="salesReport"/>
-          <include name="addEvent"/>
         </methods>
       </class> <!-- skwoll.testcases.LoginTest -->
     </classes>

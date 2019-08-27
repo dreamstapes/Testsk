@@ -1,209 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+<testng-results ignored="15" total="16" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-27T13:52:41Z" name="Default suite" finished-at="2019-08-27T13:57:48Z" duration-ms="306675">
+  <suite started-at="2019-08-27T14:03:34Z" name="Default suite" finished-at="2019-08-27T14:04:23Z" duration-ms="48339">
     <groups>
     </groups>
-    <test started-at="2019-08-27T13:52:41Z" name="Default test" finished-at="2019-08-27T13:57:48Z" duration-ms="306675">
+    <test started-at="2019-08-27T14:03:34Z" name="Default test" finished-at="2019-08-27T14:04:23Z" duration-ms="48339">
       <class name="skwoll.testcases.LoginTest">
-        <test-method is-config="true" signature="skwollLB()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:52:41Z" name="skwollLB" finished-at="2019-08-27T13:52:48Z" duration-ms="7086" status="PASS">
+        <test-method is-config="true" signature="skwollLB()[pri:0, instance:skwoll.testcases.LoginTest@2118cddf]" started-at="2019-08-27T14:03:34Z" name="skwollLB" finished-at="2019-08-27T14:03:41Z" duration-ms="7059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- skwollLB -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:52:48Z" name="skwollLN" finished-at="2019-08-27T13:53:33Z" duration-ms="44337" status="PASS">
+        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@2118cddf]" started-at="2019-08-27T14:03:41Z" name="skwollLN" finished-at="2019-08-27T14:03:53Z" duration-ms="11290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- skwollLN -->
-        <test-method signature="Dashboard()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:53:33Z" name="Dashboard" finished-at="2019-08-27T13:53:43Z" duration-ms="10718" status="PASS">
+        <test-method signature="Dashboard()[pri:0, instance:skwoll.testcases.LoginTest@2118cddf]" started-at="2019-08-27T14:03:53Z" name="Dashboard" finished-at="2019-08-27T14:04:17Z" duration-ms="24479" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //h3[text()='Added products']/h2
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DREAMS-PC', ip: '192.168.1.38', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190717172542, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 4508, moz:profile: C:\Users\DREAMS\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e60423b4-9d7f-4521-8be7-995a084fc67f
+*** Element info: {Using=xpath, value=//h3[text()='Added products']/h2}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //h3[text()='Added products']/h2
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DREAMS-PC', ip: '192.168.1.38', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190717172542, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 4508, moz:profile: C:\Users\DREAMS\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e60423b4-9d7f-4521-8be7-995a084fc67f
+*** Element info: {Using=xpath, value=//h3[text()='Added products']/h2}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at skwoll.testcases.LoginTest.Dashboard(LoginTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Dashboard -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:53:43Z" name="skwollLO" finished-at="2019-08-27T13:53:47Z" duration-ms="3362" status="PASS">
+        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@2118cddf]" started-at="2019-08-27T14:04:17Z" name="skwollLO" finished-at="2019-08-27T14:04:21Z" duration-ms="3379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:53:47Z" name="skwollLN" finished-at="2019-08-27T13:53:50Z" duration-ms="3668" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="addHappyHour()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:53:50Z" name="addHappyHour" finished-at="2019-08-27T13:54:05Z" duration-ms="14981" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addHappyHour -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:05Z" name="skwollLO" finished-at="2019-08-27T13:54:09Z" duration-ms="3481" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:09Z" name="skwollLN" finished-at="2019-08-27T13:54:14Z" duration-ms="5223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="editStripe()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:14Z" name="editStripe" finished-at="2019-08-27T13:54:23Z" duration-ms="8731" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editStripe -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:23Z" name="skwollLO" finished-at="2019-08-27T13:54:26Z" duration-ms="3231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:26Z" name="skwollLN" finished-at="2019-08-27T13:54:29Z" duration-ms="2781" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="eventList()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:29Z" name="eventList" finished-at="2019-08-27T13:54:33Z" duration-ms="3740" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- eventList -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:33Z" name="skwollLO" finished-at="2019-08-27T13:54:36Z" duration-ms="3200" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:36Z" name="skwollLN" finished-at="2019-08-27T13:54:39Z" duration-ms="2944" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="happyHourList()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:39Z" name="happyHourList" finished-at="2019-08-27T13:54:43Z" duration-ms="4815" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- happyHourList -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:43Z" name="skwollLO" finished-at="2019-08-27T13:54:47Z" duration-ms="3193" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:47Z" name="skwollLN" finished-at="2019-08-27T13:54:50Z" duration-ms="2891" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="menuAddCategory()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:50Z" name="menuAddCategory" finished-at="2019-08-27T13:54:54Z" duration-ms="4464" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- menuAddCategory -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:54Z" name="skwollLO" finished-at="2019-08-27T13:54:57Z" duration-ms="3158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:54:57Z" name="skwollLN" finished-at="2019-08-27T13:55:00Z" duration-ms="2801" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="menuAddProduct()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:55:00Z" name="menuAddProduct" finished-at="2019-08-27T13:55:22Z" duration-ms="22010" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- menuAddProduct -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:55:22Z" name="skwollLO" finished-at="2019-08-27T13:55:25Z" duration-ms="3140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:55:25Z" name="skwollLN" finished-at="2019-08-27T13:55:28Z" duration-ms="3043" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="menuAddSubcategory()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:55:28Z" name="menuAddSubcategory" finished-at="2019-08-27T13:55:37Z" duration-ms="9133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- menuAddSubcategory -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:55:37Z" name="skwollLO" finished-at="2019-08-27T13:55:40Z" duration-ms="3150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:55:40Z" name="skwollLN" finished-at="2019-08-27T13:55:44Z" duration-ms="3071" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="menuCategoryList()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:55:44Z" name="menuCategoryList" finished-at="2019-08-27T13:55:49Z" duration-ms="5033" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- menuCategoryList -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:55:49Z" name="skwollLO" finished-at="2019-08-27T13:55:52Z" duration-ms="3220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:55:52Z" name="skwollLN" finished-at="2019-08-27T13:55:55Z" duration-ms="3307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="menuSubcategoryList()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:55:55Z" name="menuSubcategoryList" finished-at="2019-08-27T13:55:58Z" duration-ms="2790" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- menuSubcategoryList -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:55:58Z" name="skwollLO" finished-at="2019-08-27T13:56:01Z" duration-ms="3201" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:56:01Z" name="skwollLN" finished-at="2019-08-27T13:56:04Z" duration-ms="3238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="menuWelComeDrink()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:56:04Z" name="menuWelComeDrink" finished-at="2019-08-27T13:56:16Z" duration-ms="12053" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- menuWelComeDrink -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:56:16Z" name="skwollLO" finished-at="2019-08-27T13:56:20Z" duration-ms="3190" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:56:20Z" name="skwollLN" finished-at="2019-08-27T13:56:23Z" duration-ms="3056" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="order()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:56:23Z" name="order" finished-at="2019-08-27T13:56:30Z" duration-ms="7002" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- order -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:56:30Z" name="skwollLO" finished-at="2019-08-27T13:56:33Z" duration-ms="3152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:56:33Z" name="skwollLN" finished-at="2019-08-27T13:56:36Z" duration-ms="3092" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="otherProductList()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:56:36Z" name="otherProductList" finished-at="2019-08-27T13:57:04Z" duration-ms="27970" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- otherProductList -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:57:04Z" name="skwollLO" finished-at="2019-08-27T13:57:07Z" duration-ms="3471" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:57:07Z" name="skwollLN" finished-at="2019-08-27T13:57:10Z" duration-ms="3117" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="payOut()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:57:10Z" name="payOut" finished-at="2019-08-27T13:57:14Z" duration-ms="4000" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- payOut -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:57:14Z" name="skwollLO" finished-at="2019-08-27T13:57:18Z" duration-ms="3522" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:57:18Z" name="skwollLN" finished-at="2019-08-27T13:57:25Z" duration-ms="6722" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="setting()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:57:25Z" name="setting" finished-at="2019-08-27T13:57:29Z" duration-ms="4421" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setting -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:57:29Z" name="skwollLO" finished-at="2019-08-27T13:57:32Z" duration-ms="3182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollLN()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:57:32Z" name="skwollLN" finished-at="2019-08-27T13:57:36Z" duration-ms="3362" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLN -->
-        <test-method signature="viewProfile()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:57:36Z" name="viewProfile" finished-at="2019-08-27T13:57:43Z" duration-ms="7160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- viewProfile -->
-        <test-method is-config="true" signature="skwollLO()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:57:43Z" name="skwollLO" finished-at="2019-08-27T13:57:46Z" duration-ms="3260" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skwollLO -->
-        <test-method is-config="true" signature="skwollCB()[pri:0, instance:skwoll.testcases.LoginTest@623a8092]" started-at="2019-08-27T13:57:46Z" name="skwollCB" finished-at="2019-08-27T13:57:48Z" duration-ms="1735" status="PASS">
+        <test-method is-config="true" signature="skwollCB()[pri:0, instance:skwoll.testcases.LoginTest@2118cddf]" started-at="2019-08-27T14:04:21Z" name="skwollCB" finished-at="2019-08-27T14:04:23Z" duration-ms="2092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- skwollCB -->
