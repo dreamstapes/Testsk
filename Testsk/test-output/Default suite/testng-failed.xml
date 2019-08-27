@@ -5,6 +5,7 @@
     <classes>
       <class name="skwolladmin.testcases.TestcasesAdmin">
         <methods>
+          <include name="skwollImageCategoryList"/>
           <include name="skwollCB"/>
           <include name="venuesAdd"/>
           <include name="skwollLO"/>
